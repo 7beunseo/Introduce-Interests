@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>20220961김은서 관심사 소개 페이지</title>
+    <!--<style>
+        @import url(self.css);
+    </style>-->    
+    <link rel="stylesheet" type="text/css" href="self.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Poor+Story&family=Stylish&family=Sunflower:wght@300&display=swap"
+      rel="stylesheet">  <!--구글폰트 적용하기 위해서서-->
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous">  <!--fontawsome적용하기 위해서-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<script src="jquery.ajax-cross-origin.min.js"></script>--><!-- 크로스도메인 해결 플러그인 -->
+    <!--Access-Control-Allow-Origin" : *-->
+  </head>
+  <body>
+    
+    <header class="title">  <!--section의 header부분과 분리-->
+
+      <div class="center">
+
+        <h2  id="top">  <!--nav바의 엘리베이터 이미지 클릭 시 여기로 이동-->
+          Welcome :p Hello
+        </h2>
+
+        <div >
+            <audio controls src="./audio/Zac Nelson - Step into Success.mp3">오디오 지원하지 않음</audio>
+        </div>
+
+        <div><small>방문해주셔서 감사합니다 :&#41;</small></div>
+        
+      </div>
+
+    </header>
+
+    <nav>
+
+      <div>
+
+        <a href="#top">
+        <img src="./img/elevator.jfif" width="150px" height="150px">
+        </a>
+
+        <h4>content</h4>
+
+        <ol type="A">
+            <li><a href="#">Introduce</a></li>
+            <li><a href="#travel">travel</a></li>
+            <li><a href="#sil">knitting</a></li>
+            <li><a href="#biz">making</a></li>
+            <li><a href="#netflix">netflix</a></li>
+            <li><a href="#music">music</a></li>
+        </ol>
+
+      </div>
+      
+    </nav>
+
+    
+    <section>
+      <header>
+
+        <div class="my_img">
+          <img src="./img/me_2.jpg" width="240px" height="300px" style="border-radius: 125px 125px 0px 0px">
+        </div>
+
+        <div class="my_introduce">
+          20220961<br>
+          name : 김은서<sup>kim eun seo</sup><br>
+          major : Computer Engineering<br>
+          university : Duksung Women's University<br>
+          Birthday : 2003.04.03<br>
+          MBTI : ISTP<br>
+          e-mail : kimes0403@gmail.com
+        </div>
+      </header>
+
+      <article>
+        <h3 id="travel">Travel</h3>
+
+        <p>
+          여행가는것을 정말 좋아합니다. 그런데 아직 해외여행은 가본 적이
+          없어요.. 올해 된다면 꼭 가고 싶었는데 그럴 여유가 없을 것 같아서
+          한없이 미루는 중입니다.. 핑계 아닌 핑계를 대자면 비행기가 무서워요<br>
+          그래도 국내 여행은 어릴때부터 정말 많이 갔다왔어요. 여행을 가기 위해
+          돈을 벌어야 할 판입니다. 열심히 공부해서 성공해야겠어요.
+        </p>
+
+        <!--이벤트함수 onmouseover : alt 내용을 보이기 위해 src를 없앰, onmouseout : 마우스를 떼면 원래 src내용 복구-->
+        <div class="making_img">
+          <img class="img_block" onmouseout="reset(this)" onmouseover="showMessage(this)" alt="가족끼리 강릉" src="./img/me1.jpg" width="273px" hegiht="120px;">
+          <img class="img_block" onmouseout="reset(this)" onmouseover="showMessage(this)" src="./img/me2.jpg" width="273px" hegiht="120px;" alt="가족끼리 강릉">
+          <img class="img_block" onmouseout="reset(this)" onmouseover="showMessage(this)" src="./img/me3.jpg" width="273px" hegiht="120px;" alt="가족끼리 강릉">
+          <img class="img_block" onmouseout="reset(this)" onmouseover="showMessage(this)" src="./img/travel1.jpg" width="200px" height="200px" alt="가족끼리 부산">
+          <img class="img_block" onmouseout="reset(this)" onmouseover="showMessage(this)" src="./img/travel3.jpg" width="200px" height="200px" alt="친구와 북촌한옥마을">
+          <img class="img_block" onmouseout="reset(this)" onmouseover="showMessage(this)" src="./img/travel4.jpg" width="200px" height="200px" alt="친구와 전주">
+          <img class="img_block" onmouseout="reset(this)" onmouseover="showMessage(this)" src="./img/travel5.jpg" width="200px" height="200px" alt="친구와 전주">
+          <img class="img_block" onmouseout="reset(this)" onmouseover="showMessage(this)" src="./img/travel6.jpg" width="200px" height="200px" alt="부끄럽지만 열차에서 잠">
+          <img class="img_block" onmouseout="reset(this)" onmouseover="showMessage(this)" src="./img/travel7.jpg" width="200px" height="200px" alt="친구랑 강릉">
+          <img class="img_block"onmouseout="reset(this)" onmouseover="showMessage(this)"  src="./img/travel8.jpg" width="200px" height="200px" alt="친구랑 강릉">
+          <img class="img_block" onmouseout="reset(this)" onmouseover="showMessage(this)" src="./img/travel9.jpg" width="200px" height="200px" alt="어디더라..">
+        </div>
+      </article>
+
+      <article>
+        <h3 id="sil">Knitting</h3>
+
+        <div class="making_img">
+          <img class="img_block" src="./img/mock1.jpg" width="200px" height="200px">
+          <img  class="img_block" src="./img/mock2.jpg" width="200px" height="200px">
+          <img  class="img_block" src="./img/mock3.jpg" width="300px" height="200px">
+        </div>
+
+        <p>
+          저번 겨울방학 때 뜨개질에 빠져서 하루종일 드라마 보면서 뜨개질을
+          했었어요. 엄마가 계속 공부하라고 잔소리하길래 목도리 떠서 뇌물로
+          드려도 안 통했던 기억이 있습니다. 그러나 결국 공부는 안 했어요.. 이번
+          여름방학때부터는 정말 공부할 예정입니다.. 그치만 아직 놀아도 되는
+          나이가 아닌가요..?<br>
+          새로 꽈배기 모양을 도전했는데 사진으로는 예쁘게 나와도 실제로 보면
+          별로 안 예뻐서 집에 처박혀 있습니다.
+        </p>
+      </article>
+
+      <article>
+        <h3 id="biz">Making</h3>
+
+        <div class="making_img">
+          <img class="img_block" src="./img/make_new1.jpg" width="200px" height="200px">
+          <img class="img_block" src="./img/make_new2.jpg" width="200px" height="200px">
+        </div>
+
+        <p>
+          사실 뜨개질도 포함이긴 한데 아무거나 만드는거 좋아해요<br>
+          주변 사람들이 보면 가내 수공업 잘 한대요 ㅎㅎ..<br>
+          요즘 바빠서 잘 못 하고 있는데 시험 끝나면 또 김은서표 가내 수공업
+          진행할 예정입니다.<br>
+        </p>
+      </article>
+
+      <article>
+        <h3 id="netflix">Netflix</h3>
+
+        <p>
+          거의 대부분의 사람들이 그렇겠지만 넷플릭스 보는거 정말 좋아해요.
+          좋아하는 장르는 판타지..? 그리고 생각보다 로멘스 별로 안 좋아해요.
+          애니메이션 좋아합니다
+        </p>
+
+        <div class="making_img">
+          <img class="img_block" src="./img/pono.jfif" width="280px" height="200px">
+          <img class="img_block" src="./img/sad.jfif" width="280px" height="200px">
+          <img class="img_block" src="./img/san.jfif" width="280px" height="200px">
+        </div>
+
+      </article>
+
+      <article>
+        <h3 id="music"><i class="fas fa-music"></i> Music</h3>
+
+        <p>
+          원래 음악 듣는걸 별로 좋아하진 않았는데 통학 시간에 할게 없어서 노래만
+          듣다 보니까 이제 노래 없으면 통학 못하는 사람이 되어버렸어요.<br>
+          고등학생때는 시험 전 3주동안은 노래를 절대 듣지 않는 징크스가
+          있었습니다. 수능때는 그냥 몇 달 동안 세상과 벽을 쌓을 정도로 노래를 안
+          듣고 살아서 유행에 뒤쳐지는 사람이었어요. 맨날 이거도 몰라? 소리
+          듣고.. 그래서 대학생이 됐을 때 가장 좋았던 점은 공부하면서 노래를
+          들어도 된다는 점입니다.
+        </p>
+
+        <div class="youtube_img">
+
+          <div class="song2">
+            <a href="https://youtu.be/qr1-WpWOUk8" target="_blank">
+            <img src="./img/blue4.jfif" alt="유튜브 사진" width="150px" height="150px"></a>
+          </div>
+
+          <div class="song2">
+            <a href="https://youtu.be/WQdFA55hT80" target="_blank">
+            <img src="./img/blue3.jfif" alt="유튜브 사진" width="150px" height="150px"></a>
+          </div>
+
+          <div class="song2">
+            <a href="https://youtu.be/p1bjnyDqI9k" target="_blank">
+            <img src="./img/blue2.jfif" alt="유튜브 사진" width="150px" height="150px"></a>
+          </div>
+
+          <div class="song2">
+            <a href="https://youtu.be/TicGJQqrq2M" target="_blanl">
+            <img src="./img/blue1.jfif" alt="유튜브 사진" width="150px" height="150px"></a>
+          </div>
+
+        </div>
+
+        <div class="music_info">
+
+          <div class="song">
+            <i class="fas fa-headphones-alt"></i>   Broken<br>lovelytheband
+          </div>
+
+          <div class="song"> 
+            <i class="fas fa-headphones-alt"></i>   flowering<br>LUCY
+          </div>
+
+          <div class="song">
+            <i class="fas fa-headphones-alt"></i>   Dice<br>NMIXX
+          </div>
+
+          <div class="song">
+            <i class="fas fa-headphones-alt"></i>   The Drum<br>Alen Walker
+          </div>
+            
+        </div>
+        </article>
+        
+        <article>
+          <h3>댓글 남겨주세요 ~!</h3>
+          <div id="commentList">
+            <!-- 댓글이 표시될 영역 -->
+          </div>
+        
+          <form id="commentForm" class="center">
+            <textarea id="contentInput" placeholder="여기에 댓글을 작성해 주세요"></textarea>  <!--댓글 내용 -->
+            <button type="submit" class="comment_btn">저장하기</button>
+            <button type="reset" class="comment_btn">삭제하기</button>
+          </form>
+          <script src="./javascript/script.js"></script>
+          <!--script.js를 이용해서 div 동적 생성, 좋아요 클릭하면 숫자 증가하도록 함 -->
+        </article>
+
+        <article>
+          <h3>Todo-List</h3>
+          <div id="todoList" class="center"></div>
+          <form id="todoForm">
+            <input type="text" id="todoInput" style="width:70%; height:40px;background-color:white; border-radius: 20px; font-size:20px" placeholder="할일을 입력해주세요!">
+            <button type="submit" style="width:25%; height:40px; background-color:white; border-radius: 20px;" >TODO 등록</button>
+          </form>
+        <script src="./javascript/index.js"></script>
+        <!--index.js에서 새로 div생성, 선택되면 색 바뀌게 함-->
+        
+          <div id="todoList"></div>
+        </article>
+          
+
+
+    </section>
+
+    <aside>
+      <div id="finish_login" class="center">  <!--로그인 됐다는 점이 다름름-->
+        <h4>로그인 정보</h4>
+
+        <script>
+          let yourname = new URLSearchParams(window.location.search).get("name");
+          document.write(yourname+"님 <br>반갑습니다");
+        </script>
+
+      </div>
+
+      <form action="self.html" method="get" name="logout" class="logout" onsubmit="return change();">
+        <input type="hidden" id="name2" name="name">
+        <input type="hidden" id="id2" name="id">
+        <input type="hidden" id="pw2" name="pw">
+        <input type="submit" class="submit" value="로그아웃">
+        
+      </form>
+      <!--total.js파일의 change를 통해 true or false 반환값을 받음. 만약 true라면 폼을 보내고, false라면 보내지 않음-->
+
+      
+
+      <div class="table">
+
+        <h4 class="center">성적</h4>
+
+        <table>
+          <caption>2023-1점수</caption>
+  
+          <thead>
+            <tr><td>과목</td><td>점수</td><td>학점</td></tr>
+          </thead>
+  
+          <tfoot>
+            <tr><td>총합</td><td>96.3</td><td>4.5</td></tr>
+          </tfoot>
+  
+          <tbody>
+            <tr><td>인기초</td><td>98</td><td>A+</td></tr>
+            <tr><td>파이썬</td><td>90</td><td>A+</td></tr>
+            <tr><td>C언어</td><td>99</td><td>A+</td></tr>
+          </tbody>
+  
+          </table>
+        </div>
+
+
+        <div id="go_form" class="center">
+
+          <h4>폼 작성란</h4>
+
+          <form action="form_new.html" method="get">  <!--로그인 성공 시에만 폼 작성-->
+            <input type="hidden" id="name" name="name">
+            <input type="hidden" id="id" name="id">
+            <input type="hidden" id="pw" name="pw">
+            <label>  <!--사진을 선택해도 폼 작성이 가능하도록 label로 묶음-->
+            <input type="submit" value="폼 작성하러가기" class="submit">
+              <img src="./img/benefit.png" width="180px" height="300px">
+            </label>
+          </form>
+
+          <script src="./javascript/url_information.js"></script>
+          <!--url정보를 불러와 id값, pw값 파악함 -->
+        </div>
+
+        <div class="center">
+
+          <h4>캘린더</h4>
+
+          <a href="https://time.is/ko/calendar">
+            <img src="./img/date.png" width="180px" height="300px">
+          </a>
+
+
+          <p>
+            " 다가오는 5월도 좋은 하루 ! "<br>
+            <span>--일정--</span>
+            5/5 어린이날<br>
+            5/8 어버이날<br>
+            5/12 논문분석<br>
+            5/15 스승의날<br>
+          </p>
+
+          <button id="jquery">jQuery 버튼</button>
+          <script>
+            $("#jquery").click(function() {
+              alert("나는 jQuery!");
+            });
+          </script>
+          
+          
+          
+          
+          <div id="div1" style="margin:30px 0px">
+            <h3>도봉구의 미세먼지</h3>
+          </div>
+          <button id="dirty" class="ajax_btn">궁금하시죠!</button>
+          <script src="./javascript/dirty.js"></script>
+          <!--dirty.js파일을 통해 비동기방식으로 데이터 불러옴-->
+
+          
+          
+    </aside>
+    <footer class="center">
+      <p>&copy; 2023 kimeunseo. All rights reserved.
+      </p>
+    </footer>
+    <script src="./javascript/total.js"></script>
+  </body>
+</html>

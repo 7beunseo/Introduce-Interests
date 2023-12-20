@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>만족도조사</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Poor+Story&family=Stylish&family=Sunflower:wght@300&display=swap"
+      rel="stylesheet">
+    <style>
+      input[type=radio] {
+        accent-color: beige;
+      }
+      input[type=text] {
+        border: 2px dotted goldenrod;
+      }
+      input[type=number]:hover,
+      input[type=text]:hover {
+        background: aliceblue;
+        font-size: 1.5em;
+      }
+
+      hr {
+        border: 1px dotted green;
+      }
+      #main {
+        margin-top: 38px;
+        margin-bottom: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 30px;
+        border: 3px solid green;
+        text-align: center;
+        font-family: "Black Han Sans", sans-serif;
+        font-family: "Poor Story", cursive;
+        background-image: url("./img/background_more.png");
+        background-color: beige;
+        background-size: 85% 90%;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+
+      h3 {
+        text-shadow: 2px 2px rgb(131, 168, 131);
+      }
+    </style>
+  </head>
+  <body id="main">
+    <h3>만족도 조사 폼 작성</h3>
+    <script>
+      var yourname = new URLSearchParams(window.location.search).get("name");
+      document.write(yourname+"님의 의견이 웹 사이트를 발전시키는데 큰 도움이 됩니다~");
+    </script>
+    <hr>
+    <form action="self_login.html" method="get" name="query">
+      <label>
+        1. 성별 입력 : 여자<input type="radio" name="man/woman" value="women">
+        남자 <input type="radio" name="man/woman" value="men" checked><br>
+      </label>
+      <hr>
+      2. 연령 : <input type="number" max="100" min="0" step="1"><br>
+      <hr>
+      3. 직업 :
+      <select name="job">
+        <option value="student">학생</option>
+        <option value="teacheer">교사</option>
+        <option value="civil cervant">공무원</option>
+        <option value="office worker">직장인</option>
+        <option value="else">기타</option>
+      </select>
+      <br>
+      <hr>
+      3. 서비스는 어떠셨나요? <br><br>
+      <label><input type="radio" name="how_was_it" value="very good" checked>매우만족
+      </label>
+
+      <label><input type="radio" name="how_was_it" value="good">만족 </label>
+      <label><input type="radio" name="how_was_it" value="average">보통 </label>
+      <label><input type="radio" name="how_was_it" value="not bad">그저그럼</label>
+
+      <label><input type="radio" name="how_was_it" value="why did you make this">왜 만들었는지
+        모르겠다</label><br><br>
+
+      3-2. 3번과 같이 선택한 이유를 작성해 주세요<br><br>
+      <textarea
+        cols="50"
+        rows="3"
+        wrap="HARD"
+        placeholder="자유롭게 작성해 주세요 ~ "></textarea>
+
+      <br>
+      <hr>
+      4. 소감을 한 줄 작성해 주세요<br><br>
+      <input type="text" list="good" name="good" size="40"><br><br>
+      <hr>
+      5. 좋아하는 색이 있으신가요? 배경 색을 바꿔드릴게요~
+      <input
+        type="color"
+        onchange="document.body.style.background=this.value">  <!--이벤트리스너 1 : 색을 입력받는 폼을 작성 후 해당 색으로 배경 색 바꿈-->
+      <hr>
+      6. 날짜 입력 : <input type="date" value="2024-04-03">
+      <input type="time" value="04:03"><br><hr>
+      7.이메일 입력(7일 이내 삭제 예정)<br><br>
+      <input type="email" placeholder="id@gamil.com"><br><hr><br>
+      <button type="submit">완료</button>
+      <br><br>
+
+      <input type="hidden" id="name" name="name">
+      <input type="hidden" id="id" name="id">
+      <input type="hidden" id="pw" name="pw">
+    </form>
+
+    <script src="./javascript/url_information.js"></script>
+
+    <datalist id="good">
+      <option value="완벽했다"></option>
+      <option value="이보다 더 완벽할 수는 없다"></option>
+    </datalist>
+  </body>
+</html>
